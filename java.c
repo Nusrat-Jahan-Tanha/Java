@@ -1,25 +1,22 @@
-//Exception_Handling
+//Exception_Handling 2
 
 package Exception_Handling;
 
-public class ExceptionDemo {
-
-    public static void main(String[]args)
-    {
-        try
-        {
-            int a=10;
-            int b=0;
+public class ExceptionDemo2 {
+    public static void main(String[]args) {
+        try {
+            int a = 20;
+            int b = 0;
             int result = a/b;
-            System.out.println("Result is:"+result);
+            System.out.println("Result is:" + result);
 
+        } catch (ArrayIndexOutOfBoundsException e) {
+            System.out.println("Exception:" + e);
         }
-        catch(ArithmeticException e)
-        {
-            System.out.println("Exception:"+e);
-
+        finally {
+            System.out.println("I love Error");
         }
-
-        System.out.println("I love Math");
     }
+
 }
+
